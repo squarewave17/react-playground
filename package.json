@@ -1,0 +1,25 @@
+{
+  "name": "react-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "like-button.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchbabel": "babel --watch src --out-file ./build/script.js --presets react-app/prod",
+    "tailwindbuild": "tailwindcss -i ./src/input.css -o ./build/output.css --minify",
+    "tailwindwatch": "tailwindcss -i ./src/input.css -o ./build/output.css --watch --minify",
+    "start": "npm-run-all --parallel watchbabel tailwindwatch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

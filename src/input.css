@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply py-2 px-4 bg-inherit text-zinc-900 font-semibold border border-zinc-900 rounded;
+  }
+}
